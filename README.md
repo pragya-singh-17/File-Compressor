@@ -13,23 +13,21 @@ Compile the code using a C++ compiler (e.g., g++):
 g++ -o huffman test.cpp
 ```
 
-### Compress a file
+### To Compress
 
 ```sh
-huffman compress <input_file> <output_file>
+./huffman compress sample.txt compressed.bin
 ```
 
-- `<input_file>`: Path to the file you want to compress.
-- `<output_file>`: Path where the compressed file will be saved.
+This will create a new file, `compressed.bin`, which is the compressed version of `sample.txt`.
 
-### Decompress a file
+### To Decompress
 
 ```sh
-huffman decompress <input_file> <output_file>
+./huffman decompress compressed.bin decompressed.txt
 ```
 
-- `<input_file>`: Path to the compressed file.
-- `<output_file>`: Path where the decompressed file will be saved.
+This will create a new file, `decompressed.txt`, which is the decompressed version of `compressed.bin`.
 
 ## Example
 
